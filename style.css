@@ -8,8 +8,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url("mainbagimg.jpeg");
-    
+    background-image: url("mainbagimg.jpeg"); 
     background-size: cover;
     background-position: center;
 }
@@ -132,6 +131,8 @@ h4{
     width: 100%;
     padding-top: 100px 0px;
     background-color: #191919;
+    display: flex;
+    flex-direction: row;
 }
 .about img{
     height: auto;
@@ -206,7 +207,7 @@ h4{
 
 .skills{
     background-color: #191919;
-    height: 250px;
+    min-height: 100%;
     width: 33.3%;
 }
 #skill-heading{
@@ -218,6 +219,8 @@ h4{
     padding-bottom: 20px;
 }
 ul.list1{
+    display: flex;
+    flex-wrap: wrap;
     color: #fcfc;
     text-transform: capitalize;
     text-align: justify;
@@ -270,6 +273,12 @@ ul.list3{
     background-color: #191919;
     padding-top: 30px;
     padding-bottom: 30px;
+    
+}
+.certmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*certification section starts*/
 #certification-heading{
@@ -337,7 +346,7 @@ ul.list3{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 70%;
 }
 .numbertext-1 {
     color: white;
@@ -399,4 +408,12 @@ footer p:nth-child(2){
 .social a:hover{
     transform:scale(1.3);
     transition: .3s;
+}
+
+@media only screen and (min-width: 1000px) {
+    .about.main{
+        display: flex;
+        flex-direction: column !important;
+    }
+    
 }
